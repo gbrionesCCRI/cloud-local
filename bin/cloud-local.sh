@@ -80,7 +80,8 @@ function download_packages {
   fi
 
   if [[ "$hbase_enabled" -eq 1 ]]; then
-    urls=("${urls[@]}" "${mirror}/hbase/${pkg_hbase_ver}/hbase-${pkg_hbase_ver}-bin.tar.gz")
+#    urls=("${urls[@]}" "${mirror}/hbase/${pkg_hbase_ver}/hbase-${pkg_hbase_ver}-bin.tar.gz")
+    urls=("${urls[@]}" "https://archive.apache.org/dist/hbase/${pkg_hbase_ver}/hbase-${pkg_hbase_ver}-bin.tar.gz")
   fi
 
   if [[ "$zeppelin_enabled" -eq 1 ]]; then
